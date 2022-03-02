@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+}
+#login{
+width: 300px;
+height: 400px;
+background-color: red;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 10px;
+box-shadow: 5px 5px 5px white;
+}
+#img{
+margin-top: 10PX;
+margin-left: 50px;
+border-radius: 100px;
+}
+#matricula{
+padding: 0px;
+margin-left: 18px;
+margin-top: 10px;
+width: 195px;
+height: 25px;
+border-radius: 5px;
+border:none!important;
+
+
+}
+#senha{
+margin-left: 28px;
+margin-top: 10px;
+width: 193px;
+height: 25px;
+border-radius: 5px;
+border:none!important;
+
+
+}
+#butao{
+margin-top: 50px;
+margin-left: 20px;
+width: 260px;
+border-radius: 10px;
+border:none!important;
+height: 30px;
+
+}
