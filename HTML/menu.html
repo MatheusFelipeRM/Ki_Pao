@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../IMAGENS/bread_food_4690.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/alertas.css">
     <title>Menu</title>
     <script src="../JAVASCRIPT/banco.js"></script>
     
@@ -12,41 +13,36 @@
 <body>
     <h1>Usuario</h1>
     <button>Adicionar</button>
-    <button>Remover</button>
-    <button>Editar</button>
     <table border="1px">
         <thead>
             <th>Nome</th>
             <th>matricula</th>
             <th>senha</th>
             <th>idade</th>
+            <th>ações</th>
         </thead>
         <tbody id="table-usuario">
 
         </tbody>
     </table>
     <h1>Produto</h1>
-    <button>Adicionar</button>
-    <button>Remover</button>
-    <button>Editar</button>
+    <button onclick="alertAddProduct()">Adicionar</button>
     <table border="1px">
         <thead>
             <th>Nome</th>
             <th>Preço</th>
             <th>Serial</th>
+            <th>Ações</th>
         </thead>
         <tbody id="table-produto">
 
         </tbody>
     </table>
     <h1>Carrinho</h1>
-                
-    <button onclick="window.location.href='carrinho_de_compra.html'">Fazer Venda</button>
-    <button onclick="window.location.href='remover_produto.html'">Remover</button>
-    <button>Editar</button>
+    <button>Adicionar</button>
 
 
-
+    <div id="alert"></div>
     <script src="../JAVASCRIPT/menu.js"></script>
 </body>
 </html>

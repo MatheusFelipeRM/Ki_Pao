@@ -1,0 +1,42 @@
+.container-alert{
+    position: fixed;
+    background-color: greenyellow;
+    border-radius: 1em;
+    width: 40%;
+    height: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.labels{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.container-alert input{
+    display: block;
+    padding: 8px;
+    width: 94%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(197, 196, 196);
+    margin-top: 10px;
+}
+
+.buttons-alert{
+    padding: 0;
+    position: relative;
+    margin-top: 10px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container-alert button{
+    position: relative;
+    padding: 8px;
+}
