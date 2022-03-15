@@ -1,23 +1,20 @@
 function validar_senha(){
    var matricula = document.getElementById("matricula").value
    var senha = document.getElementById("senha").value
-    for(var i = 0; i < funcionarios.length; i++){
-        //fun_aux recebe tudo do primeiro funcionario e depois do segundo ... (matricula senha nome)
-        fun_aux = funcionarios[i]
-        if(fun_aux["matricula"]==matricula){//se fun_aux[i] na variavel for igual a matricula
-            if(fun_aux["senha"]== senha){
-                //redirecionar
-                window.location.href="../HTML/menu.html"
+    for(i in funcionarios){
+        if(funcionarios[i]["matricula"]==matricula){
+            if(funcionarios[i]["senha"]==senha){
+                window.location.href = "../HTML/menu.html"
                 return
             }else{
-                alert("Erro a senha")
+                alert("Senha incorreta!")
                 return
             }
         }
     }
-    alert("usuario não encontrado")
-    return
+    alert("Usuario não encontrado.")
 }
+
 function add_no_carrinho(produtos, preco_mutiplicado, quantidade_recebido){
     var tabela = document.getElementById("tabela")
     nova_linha= "<tr><td>"+produtos["serial"]+"</td> <td>"+produtos["nome"]+"</td> <td>"+produtos["preco"]+" R$"+"</td> <td>"+quantidade_recebido+"</td> <td>"+preco_mutiplicado+" R$"+"</td></tr>"
@@ -42,14 +39,9 @@ var quantidade_recebido = document.getElementById("quantidade").value
 
             return
             
-        }
-    
-    
-        
-        
+        }  
     }
     alert("Não encontrou o produto")
-
 }
 
 function remove_no_carrinho(produtos){
@@ -57,6 +49,7 @@ function remove_no_carrinho(produtos){
     nova_linha= "<tr><td>"+produtos['serial']+"</td> <td>"+produtos["nome"]+"</td> <td>"+produtos["preco"]+" R$"+"</td> <td>"+"removido"+"</td>"
     tabela.innerHTML += nova_linha;
 }
+
 function remover(){
     var serial_recebido = document.getElementById("caixa_de_texto").value
     var div = document.getElementById('center')
@@ -69,23 +62,14 @@ function remover(){
            remove_no_carrinho(auxiliar);
            if(resposta==1){
             auxiliar.splice(0, 1);
-            
-             
            }else if(resposta==2){
                alert("não excluido")
+           }else{
+               alert("Opção inválida!")
+                return
            }
-
-          
-           
-            
-            
-
-        
         }
-
-       
-
-}
-alert("esse "+auxiliar['nome'])
+    }
+    alert("esse "+auxiliar['nome'])
 }
 
