@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/carrinho_de_compras.css">
+    <link rel="stylesheet" href="../CSS/alerta_troco.css">
 </head>
 <body>
+    <div id="center">
    <label>Serial</label> <input type="text" id="caixa_de_texto">
    <label>Quantidade</label><input type="number" id="quantidade">
     <button onclick="receber_sereal()">Adicionar</button>
@@ -17,15 +19,18 @@
             <tr>
                 <th>Id do Produto</th>
                 <th>Nome do Produto</th>
-                <th>Preco do Preço</th>
+                <th>Preco unitario</th>
                 <th>Quantidade Escolhida</th>
                 <th>Preço Total</th>
             </tr>
 
     </table>
     <label>Preço Final:</label> <h1 id="preco_final"></h1>
-    <button>FINALIZAR</button>
-    <script src="../JAVASCRIPT/verificador_de_login.js"></script>
+    <button onclick="troco()">FINALIZAR</button>
+</div>
+    <div id="alert_troco"></div>
+    <script src="../JAVASCRIPT/troco.js"></script>
+    <script src="../JAVASCRIPT/carrino_deCompra.js"></script>
     <script src="../JAVASCRIPT/banco.js"></script>
 </body>
 </html>

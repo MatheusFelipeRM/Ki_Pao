@@ -1,0 +1,17 @@
+body{
+    background-color: #E0D51B;
+}
+#center{
+    background-color: #E6DF60;
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+table{
+    background-color: #E6E35E;
+}
+h1{
+    color: black;
+}

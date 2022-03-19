@@ -1,4 +1,12 @@
 #tabela{
             background-color: blue;
             width: 100px;
-        }
+}
+#center{
+    background-color: #E6DF60;
+    position: absolute;
+    margin-left: 350px;
+}
+body{
+    background-color: #E0D51B;
+}

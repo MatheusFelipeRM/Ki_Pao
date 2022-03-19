@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../IMAGENS/bread_food_4690.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/alertas.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
     <title>Menu</title>
     <script src="../JAVASCRIPT/banco.js"></script>
     
 </head>
 <body>
+    <div id="center">
     <h1>Usuario</h1>
-    <button>Adicionar</button>
+    <button onclick="alertAddFuncionario()">Adicionar</button>
     <table border="1px">
         <thead>
             <th>Nome</th>
@@ -39,10 +41,11 @@
         </tbody>
     </table>
     <h1>Carrinho</h1>
-    <button>Adicionar</button>
-
+    <button><a href="carrinho_de_compra.html">Fazer Compra</a></button>
+</div>
 
     <div id="alert"></div>
+    
     <script src="../JAVASCRIPT/menu.js"></script>
 </body>
 </html>

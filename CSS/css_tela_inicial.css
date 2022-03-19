@@ -5,13 +5,17 @@
 }
 body{
     margin: 0px;
-    background-color: #E05548;
+    background-color: #E6DF60;
     
 }
+img{
+    height: 150px;
+}
 #cabecario{
+    /*E6DF60*/
     font-size: 100pt;
-    color: red;
-    background-color: black;
+    color: black;
+    background-color: #E0D51B;
     text-align: center;
     height: 30px;
     font-family: var(--fonte-destaque);

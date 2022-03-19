@@ -1,0 +1,12 @@
+.container-alert{
+    background-color: white;
+    height: 130px;
+    width: 200px;
+    position: fixed;
+    border-radius: 1em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+
+}
