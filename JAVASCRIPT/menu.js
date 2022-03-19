@@ -137,7 +137,7 @@ function alertAddFuncionario(){
 
 
 function alertEditProduct(id){
-    var buffer = "<div class='container-alert'>alertalertalert><label>Valor:</label><input type='text' id='editProductValue' value="+produtos[id]['preco']+"><label>Serial:</label><input type='text' id='editProductSerial' value="+produtos[id]['serial']+"><div class='buttons-alert'><button onclick='cancelAlert()'>Cancelar</button><button onclick='editProduct("+id+")'>Salvar</button></div></div></div>"
+    var buffer = "<div class='container-alert'><div class='labels'><label>Nome:</label><input type='text' id='editProductName' value="+produtos[id]['nome']+"><label>Valor:</label><input type='text' id='editProductValue' value="+produtos[id]['preco']+"><label>Serial:</label><input type='text' id='editProductSerial' value="+produtos[id]['serial']+"><div class='buttons-alert'><button onclick='cancelAlert()'>Cancelar</button><button onclick='editProduct("+id+")'>Salvar</button></div></div></div>"
     document.getElementById("alert").innerHTML = buffer
 }
 
