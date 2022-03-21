@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #div_input input{
     width: 195px;
     height: 25px;
@@ -19,38 +18,6 @@
 #tabela{
     background-color: white;
 }
-#finalizar{
-=======
-#tabela {
-    background-color: blue;
-    width: 100px;
-}
-table{
-    box-shadow: 5px 5px 10px black;
-}
-button{
-    border: none;
-    border-radius: 8px;
-}
-input{
-    border: none;
-    border-radius: 8px;
-}
-.delete{
-    background-color: red;
-}
-.delete:hover{
-    background-color: white;
-}
-#center {
-    background-color: #E6DF60;
->>>>>>> 8e38be72e41051868815c12e5bf55f30e1cd4855
-    position: absolute;
-    top: 95%;
-    border-radius: 20px;
-    width: 105px;
-    height: 25px;
-}
 #preco{
     position: absolute;
     top: 80%;
@@ -58,9 +25,12 @@ input{
 #preco label{
    font-size: 15pt;
 }
-<<<<<<< HEAD
 body{
     background-color: rgba(255, 255, 0, 0.651);
+}
+#finalizar{
+    position: absolute;
+    top: 96%;
 }
 img{
     position: absolute;
@@ -69,8 +39,4 @@ img{
     border-radius: 10px;
     top: 25%;
     left: 20%;
-=======
-body {
-    background-color: #E0D51B;
->>>>>>> 8e38be72e41051868815c12e5bf55f30e1cd4855
 }
