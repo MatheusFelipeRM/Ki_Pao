@@ -154,8 +154,28 @@ function alertAddFuncionario() {
     document.getElementById("alert").innerHTML = buffer
 }
 
+<<<<<<< HEAD
 function alertEditProduct(id) {
     var buffer = "<div class='container-alert'><div class='labels'><label>Nome:</label><input type='text' id='editProductName' value=" + produtos[id]['nome'] + "><label>Valor:</label><input type='text' id='editProductValue' value=" + produtos[id]['preco'] + "><label>Serial:</label><input type='text' id='editProductSerial' value=" + produtos[id]['serial'] + "><div class='buttons-alert'><button onclick='cancelAlert()'>Cancelar</button><button onclick='editProduct(" + id + ")'>Salvar</button></div></div></div>"
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function alertEditProduct(id){
+    var buffer = "<div class='container-alert'>alertalertalert><label>Valor:</label><input type='text' id='editProductValue' value="+produtos[id]['preco']+"><label>Serial:</label><input type='text' id='editProductSerial' value="+produtos[id]['serial']+"><div class='buttons-alert'><button onclick='cancelAlert()'>Cancelar</button><button onclick='editProduct("+id+")'>Salvar</button></div></div></div>"
+>>>>>>> parent of b95f0b4 (consertei os produtos)
     document.getElementById("alert").innerHTML = buffer
 }
 
