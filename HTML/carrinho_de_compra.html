@@ -9,21 +9,38 @@
     <link rel="shortcut icon" href="../IMAGENS/bread_food_4690.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/carrinho_de_compras.css">
     <link rel="stylesheet" href="../CSS/alerta_troco.css">
+    <script src="../JAVASCRIPT/banco.js"></script>
 </head>
 <body>
     <div id="center">
+        <a href="menu.html"><button>Voltar</button></a>
+        <h1>Produto</h1>
+    <table border="1px">
+        <thead>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Serial</th>
+        </thead>
+        <tbody id="table-produto">
+
+        </tbody>
+    </table>
+
+    <h1>Carrinho</h1>
    <label>Serial</label> <input type="text" id="caixa_de_texto">
    <label>Quantidade</label><input type="number" id="quantidade">
     <button onclick="receber_sereal()">Adicionar</button>
-    <table id="tabela" border="1">
-
-            <tr>
-                <th>Id do Produto</th>
+    <table border="1">
+            <thead>
                 <th>Nome do Produto</th>
+                <th>Serial</th>
                 <th>Preco unitario</th>
                 <th>Quantidade Escolhida</th>
                 <th>Preço Total</th>
-            </tr>
+            </thead>
+            <tbody id="tabela">
+
+            </tbody>
 
     </table>
     <label>Preço Final:</label> <h1 id="preco_final"></h1>
@@ -31,7 +48,6 @@
 </div>
     <div id="alert_troco"></div>
     <script src="../JAVASCRIPT/troco.js"></script>
-    <script src="../JAVASCRIPT/carrino_deCompra.js"></script>
-    <script src="../JAVASCRIPT/banco.js"></script>
+    <script src="../JAVASCRIPT/carrinhoDeCompra.js"></script>
 </body>
 </html>
