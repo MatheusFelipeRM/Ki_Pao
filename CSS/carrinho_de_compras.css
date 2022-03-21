@@ -1,12 +1,29 @@
-#tabela{
-            background-color: blue;
-            width: 100px;
+#tabela {
+    background-color: blue;
+    width: 100px;
 }
-#center{
+table{
+    box-shadow: 5px 5px 10px black;
+}
+button{
+    border: none;
+    border-radius: 8px;
+}
+input{
+    border: none;
+    border-radius: 8px;
+}
+.delete{
+    background-color: red;
+}
+.delete:hover{
+    background-color: white;
+}
+#center {
     background-color: #E6DF60;
     position: absolute;
     margin-left: 350px;
 }
-body{
+body {
     background-color: #E0D51B;
 }

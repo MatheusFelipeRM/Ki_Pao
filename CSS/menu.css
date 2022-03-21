@@ -1,6 +1,20 @@
 body{
     background-color: #E0D51B;
 }
+button{
+    border-radius: 8px;
+    border: none;
+}
+.delete{
+    background-color: red;
+}
+.delete:hover{
+    background-color: white;
+}
+h1{
+    text-align: center;
+    text-shadow: 0px 0px 10px white;
+}
 #center{
     background-color: #E6DF60;
     position: absolute;
@@ -11,6 +25,10 @@ body{
 }
 table{
     background-color: #E6E35E;
+    box-shadow: 5px 5px 10px black;
+}
+table td{
+    text-align: center;
 }
 h1{
     color: black;

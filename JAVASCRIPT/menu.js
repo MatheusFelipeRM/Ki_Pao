@@ -1,14 +1,14 @@
 function updateTableUser() {
     document.getElementById("table-usuario").innerHTML = ""
     for (i in funcionarios) {
-        document.getElementById("table-usuario").innerHTML += "<tr> <td>" + funcionarios[i]['nome'] + "</td><td>" + funcionarios[i]['matricula'] + "</td><td>" + funcionarios[i]['senha'] + "</td><td>" + funcionarios[i]['idade'] + "</td><td><button onclick='alertEditFuncionario(" + i + ")'>Editar</button><button onclick='deleteUsuario(" + i + ")'>Remover</button></td></tr>"
+        document.getElementById("table-usuario").innerHTML += "<tr> <td>" + funcionarios[i]['nome'] + "</td><td>" + funcionarios[i]['matricula'] + "</td><td>" + funcionarios[i]['senha'] + "</td><td>" + funcionarios[i]['idade'] + "</td><td><button onclick='alertEditFuncionario(" + i + ")'>Editar</button><button class='delete' onclick='deleteUsuario(" + i + ")'>Remover</button></td></tr>"
     }
 }
 
 function updateTableProduct() {
     document.getElementById("table-produto").innerHTML = ""
     for (i in produtos) {
-        document.getElementById("table-produto").innerHTML += "<tr><td>" + produtos[i]['nome'] + "</td><td>" + produtos[i]['preco'] + "</td><td>" + produtos[i]['serial'] + "</td><td><button onclick='alertEditProduct(" + i + ")'>Editar</button><button onclick='deleteProduct(" + i + ")'>Remover</button></td></tr>"
+        document.getElementById("table-produto").innerHTML += "<tr><td>" + produtos[i]['nome'] + "</td><td>R$" + produtos[i]['preco'] + "</td><td>" + produtos[i]['serial'] + "</td><td><button onclick='alertEditProduct(" + i + ")'>Editar</button><button class='delete' onclick='deleteProduct(" + i + ")'>Remover</button></td></tr>"
     }
 }
 

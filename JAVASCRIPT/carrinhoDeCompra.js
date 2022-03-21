@@ -11,7 +11,7 @@ function updateTableProduct() {
 function updateCarrinho(){
     document.getElementById("tabela").innerHTML = ""
     for(i in carrinho){
-        var n = "<tr><td>" + carrinho[i]['nome'] + "</td> <td>" + carrinho[i]['serial'] + "</td> <td> R$" + carrinho[i]['preco'] + "</td> <td>" + carrinho[i]['qntd'] + "</td> <td>R$" + carrinho[i]['total'] + "</td><td><button onclick='remove_produto("+i+")'>Remover</button></td></tr>"
+        var n = "<tr><td>" + carrinho[i]['nome'] + "</td> <td>" + carrinho[i]['serial'] + "</td> <td> R$" + carrinho[i]['preco'] + "</td> <td>" + carrinho[i]['qntd'] + "</td> <td>R$" + carrinho[i]['total'] + "</td><td><button class='delete' onclick='remove_produto("+i+")'>Remover</button></td></tr>"
         document.getElementById("tabela").innerHTML += n
     }
 }
