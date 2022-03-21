@@ -54,7 +54,8 @@ function addFuncionario(){
     var nome = document.getElementById("addNome").value
     var matricula = document.getElementById("addMatricula").value
     var senha = document.getElementById("addSenha").value
-    var buffer = {nome: nome, matricula: matricula, senha: senha}
+    var idade = document.getElementById('addIdade').value
+    var buffer = {nome: nome, matricula: matricula, senha: senha, idade: idade}
     funcionarios.push(buffer)
     updateTableUser()
     cancelAlert()
@@ -117,7 +118,7 @@ function alertAddProduct(){
 
 
 function alertAddFuncionario(){
-    var buffer = "<div class='container-alert'><div class='labels'><label>Nome:</label><input type='text' id='addNome'><label>matricula:</label><input type='text' id='addMatricula'><label>senha:</label><input type='text' id='addSenha'><div class='buttons-alert'><button onclick='cancelAlert()'>Cancelar</button><button onclick='addFuncionario()'>Salvar</button></div></div></div>"
+    var buffer = "<div class='container-alert'><div class='labels'><label>Nome:</label><input type='text' id='addNome'><label>matricula:</label><input type='text' id='addMatricula'><label>senha:</label><input type='text' id='addSenha'><label>idade</label><input id='addIdade'></input><div class='buttons-alert'><button onclick='cancelAlert()'>Cancelar</button><button onclick='addFuncionario()'>Salvar</button></div></div></div>"
     document.getElementById("alert").innerHTML = buffer
 }
 

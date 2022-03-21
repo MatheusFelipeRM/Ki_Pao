@@ -10,6 +10,8 @@ function  receber_sereal(){
 var serial_recebido = document.getElementById("caixa_de_texto").value
 var quantidade_recebido = document.getElementById("quantidade").value
 
+if(quantidade_recebido != 0 && quantidade_recebido > 0){
+
     for(var i = 0; i < produtos.length; i++){
         var auxiliar = produtos[i]
 
@@ -24,5 +26,8 @@ var quantidade_recebido = document.getElementById("quantidade").value
             
         }  
     }
-    alert("Não encontrou o produto")
+    alert("Serial invalido Não encontrou o produto")
+}else{
+    alert("Adicione uma quantidade valida")
+}
 }

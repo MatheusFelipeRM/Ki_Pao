@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="../CSS/alerta_troco.css">
 </head>
 <body>
-    <div id="center">
+    <div id="div_input">
    <label>Serial</label> <input type="text" id="caixa_de_texto">
    <label>Quantidade</label><input type="number" id="quantidade">
     <button onclick="receber_sereal()">Adicionar</button>
+</div>
     <table id="tabela" border="1">
 
             <tr>
@@ -26,9 +27,12 @@
             </tr>
 
     </table>
-    <label>Preço Final:</label> <h1 id="preco_final"></h1>
-    <button onclick="troco()">FINALIZAR</button>
-</div>
+    <img src="../IMAGENS/photo_2022-03-21_08-57-19.jpg" alt="">
+    <div id="preco">
+        <label>Preço Total</label>
+   <h1 id="preco_final"></h1>
+        </div>
+    <button onclick="troco()" id="finalizar">FINALIZAR</button>
     <div id="alert_troco"></div>
     <script src="../JAVASCRIPT/troco.js"></script>
     <script src="../JAVASCRIPT/carrino_deCompra.js"></script>

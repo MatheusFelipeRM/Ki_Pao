@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
 body{
-    background-color: #E0D51B;
+    background-color: white;
 }
 #center{
     background-color: #E6DF60;
     position: absolute;
+    width: 500px;
     border-radius: 10px;
     top: 50%;
     left: 50%;
@@ -13,5 +18,20 @@ table{
     background-color: #E6E35E;
 }
 h1{
+    font-family: var(--fonte-destaque);
     color: black;
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+.add{
+    margin-left: 75px;
+}
+.add_produto{
+    margin-left: 100px;
+
+}
+#butao_compra{
+    margin-left: 40%;
 }

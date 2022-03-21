@@ -14,8 +14,8 @@
 <body>
     <div id="center">
     <h1>Usuario</h1>
-    <button onclick="alertAddFuncionario()">Adicionar</button>
-    <table border="1px">
+    <button onclick="alertAddFuncionario()" class="add">Adicionar</button>
+    <table border="1px" id="tabela_usuario">
         <thead>
             <th>Nome</th>
             <th>matricula</th>
@@ -28,7 +28,7 @@
         </tbody>
     </table>
     <h1>Produto</h1>
-    <button onclick="alertAddProduct()">Adicionar</button>
+    <button onclick="alertAddProduct()" class="add_produto">Adicionar</button>
     <table border="1px">
         <thead>
             <th>Nome</th>
@@ -41,7 +41,7 @@
         </tbody>
     </table>
     <h1>Carrinho</h1>
-    <button><a href="carrinho_de_compra.html">Fazer Compra</a></button>
+    <button id="butao_compra"><a href="carrinho_de_compra.html">Fazer Compra</a></button>
 </div>
 
     <div id="alert"></div>

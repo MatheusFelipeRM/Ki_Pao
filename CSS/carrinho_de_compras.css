@@ -1,12 +1,45 @@
-#tabela{
-            background-color: blue;
-            width: 100px;
+#div_input input{
+    width: 195px;
+    height: 25px;
+    border-radius: 20px;
 }
-#center{
-    background-color: #E6DF60;
+#div_input button{
+    width: 105px;
+    height: 25px;
+    border-radius: 20px;
+}
+#tabela{
     position: absolute;
-    margin-left: 350px;
+    top: 8%;
+    left: 60%;
+    width: 500px;
+    
+}
+#tabela{
+    background-color: white;
+}
+#finalizar{
+    position: absolute;
+    top: 95%;
+    border-radius: 20px;
+    width: 105px;
+    height: 25px;
+}
+#preco{
+    position: absolute;
+    top: 80%;
+}
+#preco label{
+   font-size: 15pt;
 }
 body{
-    background-color: #E0D51B;
+    background-color: rgba(255, 255, 0, 0.651);
+}
+img{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    top: 25%;
+    left: 20%;
 }

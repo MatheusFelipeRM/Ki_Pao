@@ -1,5 +1,5 @@
 function troco(){
-        var buffer = "<div class='container-alert'><label>Valor:</label><input type='text' id='valorRecebidoValue'><p id='resposta'></p><button onclick='calcular()'>Calcular troco</button><button onclick='cancelAlert()'>cancelar</button></div>"
+        var buffer = "<div class='container-alert'><h1>Quanto você recebeu?</h1><label>Valor:</label><input type='text' id='valorRecebidoValue'><p id='resposta'></p><button onclick='calcular()'>Calcular troco</button><button onclick='cancelAlert()'>cancelar</button></div>"
         document.getElementById("alert_troco").innerHTML = buffer
 
 }

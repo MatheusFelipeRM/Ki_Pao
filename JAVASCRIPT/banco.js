@@ -8,6 +8,6 @@ funcionarios = [
 
 produtos = [
     {nome: "pao frances", preco: 5.00, serial: "123" },
-    {nome: "pao bengala", preco: 8.00, serial: "456" },
+    {nome: "pao carteira", preco: 8.00, serial: "456" },
     {nome: "pao careca", preco: 3.00, serial: "789" }
 ]
