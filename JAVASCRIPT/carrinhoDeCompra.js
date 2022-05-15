@@ -1,6 +1,7 @@
 var preco_total = 0;
 carrinho = []
 
+
 function updateTableProduct() {
     document.getElementById("table-produto").innerHTML = ""
     for (i in produtos) {
